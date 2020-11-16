@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Options - Copy Fields Data</title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+  <div class="jumbotron top-jumbotron">
+    <!-- Header -->
+    <h1 class="display-6">Copy Fields Data - CTH <span class="badge badge-info" id="app_version"></span></h1>
+    <p class="text-muted">Copy Form Fields Data : <code>Name</code>, <code>ID</code>, <code>Address</code>, <code>Links</code>, <code>Text</code>, <code>Image Link</code> and more</p>
+    <hr class="my-4">
+    <!-- Main Content -->
+    <div class="container">
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="multiCopy">
+        <label class="custom-control-label" for="multiCopy">Multiple Copy of Field Data</label>
+      </div>
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="multiCopyTranspose">
+        <label class="custom-control-label" for="multiCopyTranspose">Multiple Data in the Transpose Format</label>
+      </div>
+      <div class="form-group" style="margin-top: 10px;">
+        <input type="text" class="form-control" id="multiCopySplitVal" placeholder="Multiple Value Split Character">
+      </div>
+      <div style="margin-top: 20px;"></div>
+      <!-- Save Button -->
+      <button type="button" class="btn btn-primary" id="save_settings">Save Settings</button>
+      <a href="https://ctechhindi.in/extensions/" class="btn btn-danger" target="_blank">Get More Extensions</a>
+    </div>
+
+    <hr class="my-4">
+    
+    <!-- Footer -->
+    <div class="container">
+      <div class="mx-auto text-center">
+        <p><b>COPYRIGHT AND LICENSE COPYRIGHT</b></p>
+        Code Copyright <span id="current_year"></span> <a target="_blank" href="http://ctechhindi.in/">ctechhindi</a>. Code released under the MIT License.
+      </div>
+    </div>
+  </div>
+  <script src="/assets/js/jquery-3.5.1.slim.min.js"></script>
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="options.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+/* Top Header */
+.top-jumbotron {
+  padding: 2rem 2rem;
+}
+
+/* Application Version */
+.display-6 > span {
+  font-size: small;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "copy-fields-data",
+  "version": "0.0.1",
+  "appName": "Copy Form Fields Data - CTH",
+  "description": "Copy Form Fields Data : Name, ID, Address, Links, Text, Image Link and more",
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development webpack --watch",
+    "build": "cross-env NODE_ENV=production webpack --hide-modules",
+    "build-zip": "npm run build && node scripts/build-zip.js"
+  },
+  "author": "ctechhindi",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-loader": "^8.1.0",
+    "babel-minify": "^0.5.1",
+    "copy-webpack-plugin": "^6.0.3",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.2.1",
+    "file-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-extension-reloader": "^1.1.4"
+  },
+  "dependencies": {
+    "archiver": "^5.0.0"
+  }
+}
