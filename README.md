@@ -4,6 +4,15 @@
 
 Chrome Extension - Copy Form Fields Data : `Name`, `ID`, `Address`, `Links`, `Text`, `Image Link` and more
 
+## Screenshot
+
+![](/screenshot/1.png)
+
+![](/screenshot/2.png)
+
+![](/screenshot/3.png)
+
+
 ## [GitHub](https://github.com/ctechhindi/Copy-Form-Fields-Data)
 
 ## Features
