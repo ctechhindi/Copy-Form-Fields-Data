@@ -1,6 +1,6 @@
 {
   "name": "copy-fields-data",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "appName": "Copy Form Fields Data - CTH",
   "description": "Copy Form Fields Data : Name, ID, Address, Links, Text, Image Link and more",
   "scripts": {

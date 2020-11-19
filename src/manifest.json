@@ -65,7 +65,7 @@
 				"windows": "Alt+A"
 			},
 			"description": "Copy Field Address"
-		}
+    }
 	},
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self"
 }

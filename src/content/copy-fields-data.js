@@ -8,6 +8,8 @@ const highlightClass = "__copy-element-selector-highlighted";
 window.ex001_multiFieldName = "";
 window.ex001_multiFieldID = "";
 window.ex001_multiFieldAddress = "";
+window.ex001_multiFieldValue = "";
+window.ex001_multiFieldSelectName = "";
 let settings = "";
 
 /**
@@ -15,7 +17,6 @@ let settings = "";
  * @param {*} text 
  */
 function copyToClipboard(text) {
-  console.log("copyToClipboard -> text", text)
   const input = document.createElement("textarea");
   input.style.position = "fixed";
   input.style.opacity = 0;
@@ -130,6 +131,22 @@ chrome.runtime.onMessage.addListener((request) => {
     if (!clickedElement) { return false }
     if (clickedElement.id !== undefined) {
       copyHighlightData(clickedElement, clickedElement.id, "ex001_multiFieldID")
+    }
+  }
+
+  // Fetch Field: Value
+  else if (request && request.target === "cthEx1_copyFieldValue") {
+    if (!clickedElement) { return false }
+    if (clickedElement.value !== undefined) {
+      copyHighlightData(clickedElement, clickedElement.value, "ex001_multiFieldValue")
+    }
+  }
+
+  // Fetch Field: Selected Option Name
+  else if (request && request.target === "cthEx1_copyFieldSelectName") {
+    if (!clickedElement) { return false }
+    if (clickedElement.selectedOptions !== undefined && clickedElement.selectedOptions[0] !== undefined && clickedElement.selectedOptions[0].innerText !== undefined) {
+      copyHighlightData(clickedElement, clickedElement.selectedOptions[0].innerText, "ex001_multiFieldSelectName")
     }
   }
 });
